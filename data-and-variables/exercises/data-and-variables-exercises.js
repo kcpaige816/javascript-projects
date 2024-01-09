@@ -1,6 +1,14 @@
-// Declare and assign the variables below
+let shuttleName = 'Determination';
+let shuttleSpeedMph = 17500;
+let distanceToMarsKm = 225000000;
+let distanceToMoonKm = 384400;
+const milesPerKm = 0.621;
 
-// Use console.log to print the 'typeof' each variable. Print one item per line.
+console.log(typeof 'determination')
+console.log(typeof 17500)
+console.log(typeof 225000000)
+console.log(typeof 384400)
+console.log(typeof 0.621)
 
 // Calculate a space mission below
 
