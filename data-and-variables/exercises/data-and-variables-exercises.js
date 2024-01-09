@@ -1,7 +1,7 @@
 let shuttleName = 'Determination';
 let shuttleSpeedMph = 17500;
-let distanceToMarsKm = 225000000;
-let distanceToMoonKm = 384400;
+let MarsdistanceKm = 225000000;
+let MoondistanceKm = 384400;
 const milesPerKm = 0.621;
 
 console.log(typeof 'determination')
@@ -10,9 +10,11 @@ console.log(typeof 225000000)
 console.log(typeof 384400)
 console.log(typeof 0.621)
 
-// Calculate a space mission below
+let MilestoMars = MarsdistanceKm * milesPerKm
+let HourstoMars = MilestoMars / shuttleSpeedMph;
+let DaystoMars = HourstoMars / 24;
 
-// Print the results of the space mission calculations below
+console.log(shuttleName + " will take " + DaystoMars + " days to reach Mars. ");
 
 // Calculate a trip to the moon below
 
