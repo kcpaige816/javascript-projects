@@ -16,9 +16,6 @@ let fuelLevel = '100%'
 let weatherStatus = "clear";
 let preparedForLiftOff = false;
 
-console.log("1. " + date);
-console.log("2. " + time);
-
 if(astronautCount <= 7) {
     if(astronautStatus === "ready") {
         if(totalMassKg < maximumMassLimit) {
