@@ -9,6 +9,13 @@ if (String(num).includes('.')){
 let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT ";
 dna = dna.trim().toUpperCase();
 console.log(dna.replace("GCT", "AGG"));
+if (dna.indexOf("CAT")) {
+    console.log("CAT found");
+} else {
+    console.log("CAT NOT found");
+}
+
+
 
 //Follow up: Print the number of digits in a DECIMAL value (e.g. num = 123.45 has 5 digits but a length of 6).
 
