@@ -1,8 +1,8 @@
-let str = 'LaunchCode'
-let arr = [1, 5, 'LC101', 'blue', 42]
-let reversed = "";
+let arr = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+let evens = [];
+let odds = [];
 
-for (let i = 0; i < str.length; i++) {
-  reversed = str[i] + reversed;
+for (let i = 0; i < arr.length; i++) {
+
 }
-console.log(reversed)
+console.log(evens)
