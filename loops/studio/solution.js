@@ -12,22 +12,11 @@ let desserts = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'
 function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
-  protein.con
-//   for(let foodCategory = 0; foodCategory < pantry.length; foodCategory++) {
-//     let individualMeal = [];
-//     for (let items = 0; items < numMeals; items++) {
-//       individualMeal.push(pantry[foodCategory][foodCategory]);
-//     }
-//     meals.push(individualMeal);
-//   }
+  
+
   /// Part A #2: Write a ``for`` loop inside this function
   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
-  
-  function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
-    let pantry = [protein, grains, veggies, beverages, desserts];
-    let meals = [];
-    
-    for(let foodCategory = 0; foodCategory < pantry.length; foodCategory++) {
+  for(let foodCategory = 0; foodCategory < pantry.length; foodCategory++) {
       let individualMeal = [];
       for (let items = 0; items < numMeals; items++) {
         individualMeal.push(pantry[foodCategory][foodCategory]);
