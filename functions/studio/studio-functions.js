@@ -8,8 +8,33 @@
 // 4. Below the function, define and initialize a variable to hold a string.
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
+// let str1 = 'apple'
+// let str2 = 'LC101'
+// let str3 = 'Capitalized Letters'
+// let str4 = 'I love the smell of code in the morning.'
+
+// function reverseCharacters(stringToReverse) {
+    
+//     return stringToReverse.split("").reverse().join("")
+
+// }
+// let reversedString = " "
+// console.log(reverseCharacters(str2));
 
 // Part Two: Reverse Digits
+let str4 = 12345;
+let str5 = 6789;
+
+function reverseCharacters(stringToReverse) {
+    if (typeof(stringToReverse) === "number") {
+        return Number(stringToReverse.toString().split("").reverse().join(""));
+    } else if (typeof stringToReverse === "string") {
+        return stringToReverse.split("").reverse().join("")
+    }
+}
+
+let reversedString = " "
+console.log(reverseCharacters(str4));
 
 // 1. Add an if statement to reverseCharacters to check the typeof the parameter.
 // 2. If typeof is ‘string’, return the reversed string as before.
