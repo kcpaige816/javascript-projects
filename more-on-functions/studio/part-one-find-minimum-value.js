@@ -5,6 +5,24 @@ let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 
-//Using one of the test arrays as the argument, call your function inside the console.log statement below.
+function findMinValue(numberArray){
+  let min = numberArray[0];
+  for (i = 0; i < numberArray.length; i++){
+    if (numberArray[i] < min){
+      min = numberArray[i];
+    }
+  }
 
-console.log(/* your code here */);
+let newArray = [];
+newArray.push(min);
+let indexOfMin = numberArray.indexOf(min); 
+numberArray.splice((indexOfMin), 1);
+
+if (numberArray.length > 0){
+  findMinValue(nums3)
+} else if (numberArray.length === 0){
+    return newArray;
+}
+}    
+console.log(findMinValue(nums3));
+//Using one of the test arrays as the argument, call your function inside the console.log statement below.
