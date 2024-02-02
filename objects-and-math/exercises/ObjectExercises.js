@@ -4,7 +4,7 @@ let superChimpOne = {
    mass: 9,
    age: 6,
    astronautID: 1,
-   move: function () {return Math.floor(Math.random()*11)}
+   move: function () {return Math.floor(Math.random() * 11)}
 };
 
 let salamander = {
