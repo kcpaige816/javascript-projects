@@ -8,10 +8,10 @@ class CrewCandidate {
         // this.scores = Array.of(scores)
     }
 
-    addScore(newScore) {
-        this.scores.push(newScore)
-    //  addScore(number) {
-    //     this.scores.push(number)
+    // addScore(newScore) {
+    //     this.scores.push(newScore)
+     addScore(number) {
+        this.scores.push(number)
 
         // let scores = Array.of(this.scores);
         // return scores.push();
@@ -20,7 +20,7 @@ class CrewCandidate {
         // let nums = CrewCandidate.scores
         // nums.push()
         
-        // CrewCandidate.scores.push(number); // returns cannot read prperties of 'push'
+        // CrewCandidate.scores.push(number); // returns cannot read properties of 'push'
         // CrewCandidate.scores = CrewCandidate.scores.push();
         // this.scores = this.scores.push()
         // this.scores.push(number); //returns undefined w/ or w/o number
