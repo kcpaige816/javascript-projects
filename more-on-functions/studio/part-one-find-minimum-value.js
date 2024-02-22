@@ -25,4 +25,4 @@ if (numberArray.length > 0){
 }
 }    
 console.log(findMinValue(nums3));
-//Using one of the test arrays as the argument, call your function inside the console.log statement below.
+
