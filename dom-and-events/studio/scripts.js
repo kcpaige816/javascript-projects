@@ -38,22 +38,21 @@ function init () {
     })
 
     moveUp.addEventListener('click', () => {
-        // parseInt("rocket", "10px")
-        rocketImage.style.top = "10px";
+        rocketImage.style.marginTop = '10px';
         // shuttleHeight.innerHTML = "";
     })
 
-    moveDown.addEventListener('click', () => {
-        rocketImage.style.down = "10px";
-        shuttleHeight.innerHTML = "";
-    })
+    // moveDown.addEventListener('click', () => {
+    //     rocketImage.style.marginDown = '-10px';
+    //     shuttleHeight.innerHTML = "";
+    // })
 
-    moveRight.addEventListener('click', () => {
-        rocketImage.style.right = "10px";
-    })
-    moveLeft.addEventListener('click', () => {
-        rocketImage.style.left = "10px";
-    })
+    // moveRight.addEventListener('click', () => {
+    //     rocketImage.style.right = "10px";
+    // })
+    // moveLeft.addEventListener('click', () => {
+    //     rocketImage.style.left = "10px";
+    // })
 
 }  
 
