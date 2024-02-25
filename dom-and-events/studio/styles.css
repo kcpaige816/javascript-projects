@@ -16,6 +16,13 @@
     width: 100%;
 }
 
+/* #rocket {
+    position: absolute;
+}
+.move {
+    transform: translate(10px);
+} */
+
 #spaceShuttleHeight {
     display: inline-block;
 }
