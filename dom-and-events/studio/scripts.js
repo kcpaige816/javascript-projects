@@ -1,8 +1,8 @@
 function init () {
-    const abortMission = document.getElementById("missionAbort");
-    const button = document.getElementById("takeoff");
-    const landShuttle = document.getElementById("landing");
-    const paragraph = document.getElementById("flightStatus");
+    const abortButton = document.getElementById("missionAbort");
+    const takeoffButton = document.getElementById("takeoff");
+    const landingButton = document.getElementById("landing");
+    const statusParagraph = document.getElementById("flightStatus");
     const moveUp = document.getElementById("up");
     const moveDown = document.getElementById("down");
     const moveRight = document.getElementById("right");
@@ -10,30 +10,30 @@ function init () {
     const shuttleHeight = document.getElementById("spaceShuttleHeight");
     const rocketImage = document.getElementById("rocket");
 
-    button.addEventListener('click', () => {
+    takeoffButton.addEventListener('click', () => {
         if (confirm("Confirm that the shuttle is ready for takeoff.") == true) {
-            paragraph.innerHTML = "Shuttle in flight!";
+            statusParagraph.innerHTML = "Shuttle in flight!";
             document.getElementById("shuttleBackground").style.backgroundColor = 'blue'
             shuttleHeight.innerHTML = "10,000"
         } else {
-            paragraph.innerHTML = "Space shuttle ready for takeoff.";
+            statusParagraph.innerHTML = "Space shuttle ready for takeoff.";
         }
     });
 
-    landShuttle.addEventListener('click', () => {
+    landingButton.addEventListener('click', () => {
         window.alert("The shuttle is landing. Landing gear engaged.")
-        paragraph.innerHTML = "The shuttle has landed.";
+        statusParagraph.innerHTML = "The shuttle has landed.";
         document.getElementById("shuttleBackground").style.backgroundColor = 'green'
         shuttleHeight.innerHTML = "0"
     })
 
-    abortMission.addEventListener('click', () => {
+    abortButton.addEventListener('click', () => {
         if (confirm("Confirm that you want to abort mission.") == true) {
-            paragraph.innerHTML = "Mission aborted.";
+            statusParagraph.innerHTML = "Mission aborted.";
             document.getElementById("shuttleBackground").style.backgroundColor = 'green'
             shuttleHeight.innerHTML = "0"
         } else {
-            paragraph.innerHTML = "Shuttle in flight!";
+            statusParagraph.innerHTML = "Shuttle in flight!";
         }
     })
 
